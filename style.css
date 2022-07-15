@@ -1,0 +1,139 @@
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light_grey: hsl(217, 12%, 63%);
+  --medium_grey: hsl(216, 12%, 54%);
+  --dark_blue: hsl(213, 19%, 18%);
+  --very_dark_blue: hsl(216, 12%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: var(--white);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.card {
+  width: 80%;
+  max-width: 480px;
+  background-image: linear-gradient(var(--dark_blue), var(--very_dark_blue));
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+img.star {
+  padding: 1rem;
+  background-color: var(--dark_blue);
+  border-radius: 100%;
+  width: 46px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.45rem;
+}
+
+.support,
+.feedback {
+  color: var(--medium_grey);
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.number {
+  padding: 1rem 1.4rem;
+  background-color: var(--dark_blue);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.number:hover:not(.active) {
+  background-color: var(--primary);
+}
+
+.submit {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  font: inherit;
+  border-radius: 15px;
+  padding-block: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+section.success {
+  padding: 3rem 2rem;
+}
+
+section.success .container {
+  align-items: center;
+}
+
+.select {
+  color: var(--primary);
+  background-color: var(--dark_blue);
+  padding: 0.4rem 0.6rem;
+  font-size: 13px;
+  border-radius: 15px;
+}
+
+.feedback {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: var(--light_grey);
+}
+
+@media (min-width: 1440px) {
+  /* section.card {
+    width: 80%;
+    max-width: 500px;
+    background-image: linear-gradient(var(--dark_blue), var(--very_dark_blue));
+    border-radius: 15px;
+    padding: 2rem;
+  } */
+}

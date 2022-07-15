@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+  </head>
+  <body>
+
+    <section class="card">
+      <div class="container">
+        <img class="star" src="./images/icon-star.svg" alt="star icon">
+        <p class="title">How did we do?</p>
+        <p class="support">Please let us know how we did with your support
+          request. All
+          feedback is
+          appreciated
+          to help us improve our offering!</p>
+        <section class="numbers">
+          <p class="number active" num="1">1</p>
+          <p class="number" num="2">2</p>
+          <p class="number" num="3">3</p>
+          <p class="number" num="4">4</p>
+          <p class="number" num="5">5</p>
+        </section>
+        <button class="submit" type="submit">Submit</button>
+      </div>
+    </section>
+
+    <section class="card success hidden">
+      <div class="container">
+        <img class="phone" src="./images/illustration-thank-you.svg" alt="a
+          phone">
+        <p class="select">You selected <span id="rate"></span> out of 5</p>
+        <h2 class="title">Thank you!</h2>
+        <p class="feedback">We appreciate you taking the time to give a rating.
+          If
+          you ever need
+          more
+          support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
